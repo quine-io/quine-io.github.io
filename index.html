@@ -1,23 +1,54 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+                <title>QUINE</title>
 
-<div class="home">
+                <!-- Bootstrap -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+                <style>
+                  @media (min-width: 1200px) {
+                    .container {
+                      width: 575px;
+                    }
+                  }
+                </style>
+        </head>
+        <body>
+                <div class="container">
+                  <div class="page-header">
+                    <h1 style="font-size: 1200%;">
+                      <center>QUINE</center>
+                    </h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                          </div>
+                  <div class="col-md-3" >
+                    <center>
+                      <h3>
+                        <a href="http://scott.quine.io" style="color:inherit;">SCOTT</a>
+                      </h3>
+                    </center>
+                  </div>
+                  <div class="col-md-3">
+                    <center>
+                      <h3>
+                        <a href="http://carter.quine.io" style="color:inherit;">CARTER</a>
+                      </h3>
+                    </center>
+                  </div>
+                  <div class="col-md-3">
+                          </div>
+                </div>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="js/bootstrap.min.js"></script>
+        </body>
+</html>
